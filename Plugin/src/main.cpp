@@ -20,15 +20,15 @@ class Hooks
 public:
 	static void Install()
 	{
-		hkPhotoModePath<0x01FC0850, 0x082>::Install();
-		hkPhotoModePath<0x0218CF20, 0x31E>::Install();
-		hkPhotoModePath<0x0218E5C0, 0x29F>::Install();
-		hkPhotoModePath<0x0218F56C, 0x023>::Install();
+		hkPhotoModePath<0x01FBE8C0, 0x082>::Install();
+		hkPhotoModePath<0x0218AB20, 0x31E>::Install();
+		hkPhotoModePath<0x0218C1C0, 0x29F>::Install();
+		hkPhotoModePath<0x0218D16C, 0x023>::Install();
 
-		hkMessageOfTheDayPath<0x02073110, 0x2C1>::Install();
-		hkMessageOfTheDayPath<0x02073A90, 0x14B>::Install();
+		hkMessageOfTheDayPath<0x02070D70, 0x2C1>::Install();
+		hkMessageOfTheDayPath<0x020716F0, 0x14B>::Install();
 
-		hkDisableLooseFileLocation<0x034BB390, 0x172>::Install();
+		//hkDisableLooseFileLocation<0x034BB390, 0x172>::Install(); //Doesn't seem to exist on windows version
 	}
 
 	static void SetPath()
